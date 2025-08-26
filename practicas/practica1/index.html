@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica 1</title>
+    <link rel="stylesheet" href="css/estilos.css">
+ 
+</head>
+<body>
+
+    <h1>Profe Marco Digital Agency</h1>
+    <h2>Subtitulo</h2>
+    <h3>Otro subtitulo</h3>
+    <p>Bienvenido a la primera práctica de desarrollo web.</p>
+    <img src="https://images.pexels.com/photos/919073/pexels-photo-919073.jpeg" 
+        alt="Eli Psicologa en terapia" width="900" >
+    <p>Esta es una imagen de un auto japones.</p>
+    <p>Otro parrafo</p>
+    <p>Actividades de fin de semana</p>
+    <ul>
+        <li>Ir a cenar tacos</li>
+        <li>Ver una película de terror</li>
+        <li>Ir al Gym</li>
+        <li>Dormir</li>
+        <li>Caminata</li>
+    </ul>
+
+    <ol>
+        <li>Leer libro</li>
+        <li>Maridaje, vino tinto y queso, carne asada</li>
+        <li>Otra cosa</li>
+    </ol>
+
+    <section class="cv-container">
+        <header class="cv-header">
+            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Foto de perfil" class="cv-photo">
+            <div>
+                <h2>Juan Pérez</h2>
+                <p>Desarrollador Web | Frontend & Backend</p>
+            </div>
+        </header>
+        <div class="cv-content">
+            <aside class="cv-sidebar">
+                <h3>Contacto</h3>
+                <ul>
+                    <li>Email: juan.perez@email.com</li>
+                    <li>Tel: +52 55 1234 5678</li>
+                    <li>Ciudad de México</li>
+                </ul>
+                <h3>Habilidades</h3>
+                <ul>
+                    <li>HTML5, CSS3, JavaScript</li>
+                    <li>React, Node.js</li>
+                    <li>Git, Figma</li>
+                </ul>
+                <h3>Idiomas</h3>
+                <ul>
+                    <li>Español (Nativo)</li>
+                    <li>Inglés (Intermedio)</li>
+                </ul>
+            </aside>
+            <main class="cv-main">
+                <section>
+                    <h3>Perfil</h3>
+                    <p>Desarrollador web con 3 años de experiencia creando sitios modernos y funcionales. Apasionado por el diseño y la tecnología.</p>
+                </section>
+                <section>
+                    <h3>Experiencia</h3>
+                    <ul>
+                        <li>
+                            <strong>Agencia Digital XYZ</strong> (2022-2024)<br>
+                            Desarrollador Frontend. Creación de interfaces responsivas y optimización de rendimiento.
+                        </li>
+                        <li>
+                            <strong>Freelance</strong> (2021-2022)<br>
+                            Desarrollo de sitios web para pequeños negocios.
+                        </li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>Educación</h3>
+                    <ul>
+                        <li>
+                            <strong>Licenciatura en Informática</strong><br>
+                            Universidad La Salle, 2021
+                        </li>
+                    </ul>
+                </section>
+            </main>
+        </div>
+    </section>
+    <style>
+        .cv-container {
+            max-width: 900px;
+            margin: 40px auto;
+            background: #fff;
+            border-radius: 16px;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+            font-family: 'Segoe UI', Arial, sans-serif;
+            padding: 32px;
+        }
+        .cv-header {
+            display: flex;
+            align-items: center;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 24px;
+            margin-bottom: 24px;
+        }
+        .cv-photo {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-right: 32px;
+            object-fit: cover;
+            border: 3px solid #0078d7;
+        }
+        .cv-header h2 {
+            margin: 0 0 8px 0;
+            font-size: 2rem;
+            color: #0078d7;
+        }
+        .cv-header p {
+            margin: 0;
+            color: #444;
+        }
+        .cv-content {
+            display: flex;
+            gap: 32px;
+        }
+        .cv-sidebar {
+            flex: 1;
+            background: #f7f9fa;
+            border-radius: 8px;
+            padding: 24px;
+            min-width: 220px;
+        }
+        .cv-sidebar h3 {
+            margin-top: 0;
+            color: #0078d7;
+            font-size: 1.1rem;
+        }
+        .cv-sidebar ul {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 16px 0;
+        }
+        .cv-sidebar li {
+            margin-bottom: 8px;
+            color: #333;
+        }
+        .cv-main {
+            flex: 2;
+        }
+        .cv-main section {
+            margin-bottom: 24px;
+        }
+        .cv-main h3 {
+            color: #0078d7;
+            margin-bottom: 8px;
+            font-size: 1.2rem;
+        }
+        .cv-main ul {
+            padding-left: 18px;
+        }
+        .cv-main li {
+            margin-bottom: 12px;
+        }
+        @media (max-width: 700px) {
+            .cv-content {
+                flex-direction: column;
+            }
+            .cv-sidebar {
+                margin-bottom: 24px;
+            }
+        }
+    </style>
+
+</body>
+</html>
