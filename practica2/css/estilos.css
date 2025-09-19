@@ -1,0 +1,12 @@
+html {
+    background: #00ffff;
+    background: linear-gradient(191deg, #00ffff 0%, #000000 100%);
+}
+
+h1 {
+    color: white;
+}
+
+p {
+    color: #00ff00;
+}

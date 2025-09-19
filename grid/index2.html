@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-size: 50px;
+            color: white;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);  /* Three equal columns */
+            grid-template-rows: 100px 1fr 100px;
+            height: 100vh;  /* Full viewport height */
+        }
+
+        .item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .item1 {
+            background-color: lightcoral;
+            grid-column: 1/13;
+        }
+
+        .item2 {
+            background-color: lightgreen;
+            grid-column: 1/11;
+        }
+
+        .item3 {
+            background-color: lightpink;
+            grid-column: 11/13;
+        }
+
+        .item4 {
+            background-color: lightseagreen;
+            grid-column: 1/13;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                grid-template-columns: 1fr;  /* Single column layout */
+                grid-template-rows: auto;
+            }
+            .item {
+                grid-column: 1/2;  /* All items span the single column */
+            }
+        }
+
+
+
+
+ 
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="item item1">1</div>
+        <div class="item item2">2</div>
+        <div class="item item3">3</div>
+        <div class="item item4">4</div>
+    </div>
+
+</body>
+</html>
